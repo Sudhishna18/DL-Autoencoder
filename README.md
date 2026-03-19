@@ -27,9 +27,9 @@ Visualization and Analysis
 
 ## PROGRAM
 
-### Name: THEJASHREE S
+### Name: Sudhishna p
 
-### Register Number: 212224240175
+### Register Number: 212224040336
 
 ```python
 import torch
