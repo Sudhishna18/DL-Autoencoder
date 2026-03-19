@@ -3,6 +3,13 @@
 ## AIM
 To develop an image classification model using transfer learning with VGG19 architecture for the given dataset.
 
+## Problem Statement and Dataset
+Image classification is a fundamental task in computer vision where images are categorized into predefined classes. The objective of this project is to develop an image classification model using transfer learning with the pre-trained VGG19 architecture, adapting its learned features to the given dataset, and to evaluate the model’s performance using appropriate metrics.
+
+## Neural Network Model
+<img width="1248" height="963" alt="image" src="https://github.com/user-attachments/assets/ee4d8230-1165-4663-8f71-c4b89a56a5ee" />
+
+
 ## DESIGN STEPS
 ### STEP 1: 
 
@@ -143,8 +150,8 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
         print(f'Epoch [{epoch+1}/{num_epochs}], Train Loss: {train_losses[-1]:.4f}, Validation Loss: {val_losses[-1]:.4f}')
 
     # Plot training and validation loss
-    print("Name:Sudhishna P")
-    print("Register Number:212224040336")
+    print("Name: Sudhishna P")
+    print("Register Number:212224040336 ")
     plt.figure(figsize=(8, 6))
     plt.plot(range(1, num_epochs + 1), train_losses, label='Train Loss', marker='o')
     plt.plot(range(1, num_epochs + 1), val_losses, label='Validation Loss', marker='s')
@@ -186,7 +193,7 @@ def test_model(model, test_loader):
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     print("Name: Sudhishna P")
-    print("Register Number: 212224040336 ")
+    print("Register Number: 212224040336")
     plt.figure(figsize=(8, 6))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=train_dataset.classes, yticklabels=train_dataset.classes)
     plt.xlabel('Predicted')
@@ -220,7 +227,7 @@ def predict_image(model, image_index, dataset):
     # Display the image
     image_to_display = transforms.ToPILImage()(image)
     print("Name: Sudhishna P")
-    print("Register Number: 212224040336")
+    print("Register Number:212224040336")
     plt.figure(figsize=(4, 4))
     plt.imshow(image_to_display)
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted]}')
@@ -242,19 +249,19 @@ predict_image(model, image_index=55, dataset=test_dataset)
 
 ## Training Loss, Validation Loss Vs Iteration Plot
 
-<img width="532" height="517" alt="Image" src="https://github.com/user-attachments/assets/3cc79e51-0fa7-44d9-9855-82675d465235" />
+<img width="873" height="775" alt="image" src="https://github.com/user-attachments/assets/b91a6d32-088e-4786-a71a-7ad38e1631fe" />
 
 ## Confusion Matrix
 
-<img width="898" height="751" alt="Image" src="https://github.com/user-attachments/assets/791d84e3-7950-4100-8673-64a19008d2f1" />
+<img width="875" height="760" alt="image" src="https://github.com/user-attachments/assets/3f6283c4-8706-4838-b884-b8c4f607abe5" />
 
 ## Classification Report
 
-<img width="688" height="249" alt="Image" src="https://github.com/user-attachments/assets/d857eebf-31ce-4340-9b0d-71928ced41a4" />
+<img width="873" height="283" alt="image" src="https://github.com/user-attachments/assets/957f3f8a-c54f-4614-b383-5ae604b0e866" />
 
 ### New Sample Data Prediction
 
-<img width="747" height="693" alt="Image" src="https://github.com/user-attachments/assets/22548d5f-5feb-4754-8f61-edbc781681f8" />
+<img width="877" height="555" alt="image" src="https://github.com/user-attachments/assets/c9a8a280-8f62-4030-9495-4ff7b943b654" />
 
 ## RESULT
 The image classification model using transfer learning with VGG19 architecture for the given dataset has been executed successfully.
